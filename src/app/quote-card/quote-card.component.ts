@@ -16,6 +16,12 @@ export class QuoteCardComponent {
   changeQuote(){
     this.fetchData();
   }
+  speak(){
+
+    let utterance = new SpeechSynthesisUtterance(this.quote);
+    window.speechSynthesis.speak(utterance);
+    console.log(utterance); 
+  }
   fetchData(){
     this.http.get('http://api.quotable.io/random').subscribe((response:any) =>{
 
