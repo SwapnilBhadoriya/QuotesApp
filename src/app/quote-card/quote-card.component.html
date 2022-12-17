@@ -1,0 +1,25 @@
+<link
+  href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet"
+/>
+<div class="quote-card">
+  <div class="quote-card__quote">
+    {{ quote }}
+  </div>
+  <div class="quote-card__author">~ {{ Author }}</div>
+  <hr />
+  <div class="features">
+    <button
+      mat-mini-fab
+      cdkCopyToClipboard
+      [cdkCopyToClipboard]="quote"
+      (cdkCopyToClipboardCopied)="onCopySucceeded()"
+    >
+      <span class="material-icons"> content_copy </span>
+    </button>
+    <button mat-mini-fab ><span class="material-icons">
+        volume_up
+        </span></button>
+    <button mat-raised-button (click)="changeQuote()">Next Quote</button>
+  </div>
+</div>

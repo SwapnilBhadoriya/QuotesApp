@@ -1,0 +1,38 @@
+.quote-card {
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin:  auto;
+    padding: 50px 50px 10px 50px;
+    text-align: center;
+
+    background: hsla(176, 61%, 87%, 1);
+
+background: linear-gradient(90deg, hsla(176, 61%, 87%, 1) 0%, hsla(150, 54%, 86%, 1) 50%, hsla(301, 68%, 84%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(176, 61%, 87%, 1) 0%, hsla(150, 54%, 86%, 1) 50%, hsla(301, 68%, 84%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(176, 61%, 87%, 1) 0%, hsla(150, 54%, 86%, 1) 50%, hsla(301, 68%, 84%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#CAF2EF", endColorstr="#C9EFDC", GradientType=1 );
+    
+  }
+  
+  .quote-card__quote {
+    font-size: 24px;
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+  
+  .quote-card__author {
+    color: #666;
+    font-size: 14px;
+  }
+
+  .features{
+    display: flex;
+    margin:10px;
+    justify-content: space-around;
+  }
+  
